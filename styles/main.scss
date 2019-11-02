@@ -14,6 +14,15 @@ $white: white;
   font-family: "Libre Baskerville", serif;
 }
 
+@mixin button-normalize() {
+  @include montserrat($size: 12pt);
+  border: none;
+  background-color: $white;
+  padding: 15px 20px;
+  border-radius: 300px;
+  margin: 10px 0;
+}
+
 .home {
   width: 100%;
   min-height: 10px;
@@ -35,7 +44,7 @@ $white: white;
   align-items: center;
   flex-direction: column;
   .hamb-sec {
-    width: 40px;
+    width: 30px;
     height: 7px;
     background-color: $white;
     margin: 2px 5px;
@@ -65,6 +74,9 @@ $white: white;
   }
   .cta-sub {
     @include montserrat($color: $white, $size: 12pt);
-    margin-top: 10px;
+    margin: 10px 0;
+  }
+  .cta-button {
+    @include button-normalize();
   }
 }
