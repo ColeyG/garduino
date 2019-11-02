@@ -1,0 +1,38 @@
+$white: white;
+
+@mixin montserrat() {
+  font-family: "Montserrat", sans-serif;
+}
+
+@mixin baskerville() {
+  font-family: "Libre Baskerville", serif;
+}
+
+.home {
+  width: 100%;
+  min-height: 10px;
+  background-image: url(../assets/backgrounds/desktop-background.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.primary-nav {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  box-sizing: border-box;
+}
+.hamb-con {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  .hamb-sec {
+    width: 40px;
+    height: 7px;
+    background-color: white;
+    margin: 2px 5px;
+    border-radius: 100px;
+  }
+}
