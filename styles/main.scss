@@ -1,13 +1,13 @@
 $white: white;
 
-@mixin montserrat($color: black, $size: 16pt, $weight: normal) {
+@mixin montserrat($color: black, $size: 12pt, $weight: normal) {
   color: $color;
   font-size: $size;
   font-weight: $weight;
   font-family: "Montserrat", sans-serif;
 }
 
-@mixin baskerville($color: black, $size: 16pt, $weight: normal) {
+@mixin baskerville($color: black, $size: 12pt, $weight: normal) {
   color: $color;
   font-size: $size;
   font-weight: $weight;
@@ -15,7 +15,7 @@ $white: white;
 }
 
 @mixin button-normalize() {
-  @include montserrat($size: 12pt, $weight: bold);
+  @include montserrat($weight: bold);
   border: none;
   background-color: $white;
   padding: 15px 20px;
@@ -23,6 +23,9 @@ $white: white;
   margin: 10px 0;
 }
 
+body {
+  overflow-x: hidden;
+}
 .home {
   width: 100%;
   min-height: 10px;
@@ -89,5 +92,31 @@ $white: white;
     width: 200%;
     margin-top: -10%;
     margin-bottom: -35%;
+  }
+}
+.wellness {
+  box-sizing: border-box;
+  margin-top: 30%;
+  width: 100%;
+  padding: 15px;
+  .well-title {
+    @include montserrat($size: 20pt, $weight: bold);
+    line-height: 35px;
+    margin-bottom: 20px;
+  }
+  .well-body {
+    @include montserrat($size: 12pt);
+    line-height: 25px;
+  }
+}
+.leaf-illus-con {
+  width: 40%;
+  position: relative;
+  top: -35px;
+  left: -20px;
+  z-index: -1;
+  height: 0;
+  .leaf-illus-1 {
+    width: 100%;
   }
 }
