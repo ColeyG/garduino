@@ -1,4 +1,5 @@
 $white: white;
+$grey: grey;
 
 @mixin montserrat($color: black, $size: 12pt, $weight: normal) {
   color: $color;
@@ -233,5 +234,31 @@ body {
   .store-icon {
     width: 150px;
     margin-top: 15px;
+  }
+}
+.primary-footer {
+  width: 100%;
+  background-color: $white;
+  .social-icon-con {
+    width: 100%;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    img {
+      width: 40px;
+      margin: 0 10px;
+    }
+  }
+  .copy {
+    p {
+      text-align: center;
+      @include montserrat($size: 10pt, $color: $grey);
+      padding: 10px 8px;
+      a {
+        color: $grey;
+      }
+    }
   }
 }
