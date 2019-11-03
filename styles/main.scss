@@ -28,9 +28,6 @@ $grey: grey;
   box-shadow: 1px 3px 5px rgba(25, 25, 25, 0.25);
 }
 
-body {
-  overflow-x: hidden;
-}
 .home {
   width: 100%;
   min-height: 10px;
@@ -94,8 +91,8 @@ body {
   justify-content: center;
   align-items: center;
   img {
-    width: 200%;
-    margin-top: -10%;
+    width: 65%;
+    margin-top: 10%;
     margin-bottom: -35%;
   }
 }
@@ -215,8 +212,7 @@ body {
     line-height: 25px;
   }
   img {
-    width: 150%;
-    margin-left: -35%;
+    width: 100%;
   }
 }
 .download {
