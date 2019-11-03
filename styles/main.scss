@@ -65,6 +65,12 @@ $cobalt: #2b2d42;
     border-radius: 100px;
   }
 }
+@media screen and (min-width: break("medium")) {
+  .hamb-con .hamb-sec {
+    width: 50px;
+    height: 10px;
+  }
+}
 .logo-name {
   @include montserrat($color: $white, $size: 32pt, $weight: lighter);
   width: 100%;
