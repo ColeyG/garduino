@@ -1,5 +1,12 @@
 $white: white;
 $grey: grey;
+$grey-back: #f5f5f5;
+
+$green: #4cb27c;
+$salmon: #ffa37c;
+$light-green: #e4fde1;
+$teal: #439a86;
+$cobalt: #2b2d42;
 
 @mixin montserrat($color: black, $size: 12pt, $weight: normal) {
   color: $color;
@@ -221,9 +228,9 @@ $grey: grey;
   align-items: center;
   flex-direction: column;
   padding: 40px 0;
-  background-color: red;
+  background-color: $grey-back;
   h2 {
-    @include montserrat($size: 20pt, $weight: bold);
+    @include montserrat($size: 20pt, $color: $teal, $weight: bold);
     text-transform: uppercase;
   }
   p {
