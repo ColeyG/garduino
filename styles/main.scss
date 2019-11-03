@@ -292,6 +292,15 @@ $cobalt: #2b2d42;
     }
   }
 }
+@media screen and (min-width: break("xlarge")) {
+  .wellness-and-cards {
+    padding: 0 100px;
+    margin-top: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
 .knowledge-base {
   box-sizing: border-box;
   width: 100%;
