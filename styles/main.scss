@@ -23,6 +23,10 @@ $white: white;
   margin: 10px 0;
 }
 
+@mixin light-shadow() {
+  box-shadow: 1px 3px 5px rgba(25, 25, 25, 0.25);
+}
+
 body {
   overflow-x: hidden;
 }
@@ -94,6 +98,17 @@ body {
     margin-bottom: -35%;
   }
 }
+.leaf-illus-con {
+  width: 40%;
+  position: relative;
+  top: -35px;
+  left: -20px;
+  z-index: -1;
+  height: 0;
+  .leaf-illus-1 {
+    width: 100%;
+  }
+}
 .wellness {
   box-sizing: border-box;
   margin-top: 30%;
@@ -109,14 +124,37 @@ body {
     line-height: 25px;
   }
 }
-.leaf-illus-con {
-  width: 40%;
-  position: relative;
-  top: -35px;
-  left: -20px;
-  z-index: -1;
-  height: 0;
-  .leaf-illus-1 {
-    width: 100%;
+.feature-cards {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  .card {
+    box-sizing: border-box;
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    @include light-shadow();
+    .feature-icon {
+      width: 100px;
+      margin: 20px;
+    }
+    h2 {
+      @include montserrat($size: 20pt, $weight: bold);
+    }
+    p {
+      @include montserrat($size: 12pt);
+      margin-top: 10px;
+      text-align: center;
+      padding: 0 20px;
+      line-height: 25px;
+    }
   }
 }
