@@ -283,6 +283,7 @@ $cobalt: #2b2d42;
     }
     h2 {
       @include montserrat($size: 20pt, $weight: bold);
+      text-align: center;
     }
     p {
       @include montserrat($size: 12pt);
@@ -335,6 +336,7 @@ $cobalt: #2b2d42;
     align-items: center;
     flex-direction: column;
     background-color: white;
+    cursor: pointer;
     p {
       @include montserrat($size: 10pt, $weight: bold);
       text-align: center;
@@ -405,6 +407,29 @@ $cobalt: #2b2d42;
   }
   img {
     width: 100%;
+  }
+}
+@media screen and (min-width: break("xlarge")) {
+  .feature-cards {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    .card {
+      width: 500px;
+      height: 150px;
+      margin: 0;
+      flex-direction: row;
+      .feature-icon {
+        padding: 10px;
+        box-sizing: border-box;
+      }
+      .feature-text {
+        h2,
+        p {
+          text-align: left;
+          padding: 0;
+        }
+      }
+    }
   }
 }
 .download {
