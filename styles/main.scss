@@ -65,10 +65,36 @@ $cobalt: #2b2d42;
     border-radius: 100px;
   }
 }
+.desktop-menu {
+  display: none;
+  ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    li {
+      margin: 10px 20px;
+      &:last-child {
+        margin-right: 90px;
+      }
+      a {
+        @include montserrat($color: $white, $size: 12pt, $weight: bold);
+        text-decoration: none;
+      }
+    }
+  }
+}
 @media screen and (min-width: break("medium")) {
   .hamb-con .hamb-sec {
     width: 50px;
     height: 10px;
+  }
+}
+@media screen and (min-width: break("xlarge")) {
+  .hamb-con {
+    display: none;
+  }
+  .desktop-menu {
+    display: flex;
   }
 }
 .logo-name {
