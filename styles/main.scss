@@ -287,9 +287,23 @@ $cobalt: #2b2d42;
     margin-bottom: 10px;
     text-align: center;
   }
+  .store-icons {
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    flex-direction: column;
+  }
   .store-icon {
     width: 150px;
     margin-top: 15px;
+  }
+}
+@media screen and (min-width: break("medium")) {
+  .download .store-icons {
+    flex-direction: row;
+  }
+  .download .store-icon {
+    margin: 0 20px;
   }
 }
 .primary-footer {
@@ -334,6 +348,7 @@ $cobalt: #2b2d42;
     .copy {
       h2 {
         @include montserrat($size: 12pt, $weight: bold);
+        margin-top: 10px;
         text-transform: uppercase;
         display: block;
         padding: 0 8px;
