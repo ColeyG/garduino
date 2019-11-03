@@ -215,6 +215,8 @@ $cobalt: #2b2d42;
 }
 .leaf-overflow-con {
   display: none;
+  z-index: 3;
+  position: relative;
 }
 @media screen and (min-width: break("medium")) {
   .leaf-overflow-con {
@@ -341,6 +343,23 @@ $cobalt: #2b2d42;
       width: 160px;
       height: 120px;
     }
+  }
+}
+@media screen and (min-width: break("xlarge")) {
+  .knowledge-base {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .knowledge-base-and-kb-cards {
+    margin-top: 30px;
+    padding: 50px 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: $grey-back;
   }
 }
 @media screen and (min-width: break("medium")) {
