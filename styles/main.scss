@@ -194,3 +194,22 @@ body {
     }
   }
 }
+.real-time {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 15px;
+  margin-top: 15px;
+  .rt-title {
+    @include montserrat($size: 20pt, $weight: bold);
+    line-height: 35px;
+    margin-bottom: 20px;
+  }
+  .rt-body {
+    @include montserrat($size: 12pt);
+    line-height: 25px;
+  }
+  img {
+    width: 150%;
+    margin-left: -35%;
+  }
+}
