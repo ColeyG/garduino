@@ -52,6 +52,11 @@ $cobalt: #2b2d42;
   align-items: center;
   box-sizing: border-box;
 }
+@media screen and (min-width: break("xlarge")) {
+  .primary-nav {
+    padding-top: 27px;
+  }
+}
 .hamb-con {
   display: flex;
   justify-content: space-between;
@@ -107,6 +112,14 @@ $cobalt: #2b2d42;
     @include montserrat($color: $white, $size: 40pt, $weight: lighter);
   }
 }
+@media screen and (min-width: break("xlarge")) {
+  .logo-name {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 20%;
+  }
+}
 .call-to-action {
   margin-top: 15px;
   display: flex;
@@ -155,6 +168,25 @@ $cobalt: #2b2d42;
   .mock-img {
     margin-left: 10%;
     width: 80%;
+  }
+}
+@media screen and (min-width: break("xlarge")) {
+  .mock-img {
+    width: 35%;
+    transform: rotate(8deg);
+  }
+  .call-to-action {
+    justify-content: center;
+    align-items: flex-start;
+    .cta-main,
+    .cta-sub {
+      text-align: left;
+      padding: 0 10px;
+    }
+  }
+  .hero-space {
+    display: flex;
+    justify-content: space-evenly;
   }
 }
 .leaf-illus-con {
