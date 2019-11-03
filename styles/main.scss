@@ -237,7 +237,8 @@ $cobalt: #2b2d42;
   .wellness,
   .feature-cards,
   .knowledge-base,
-  .kb-cards {
+  .kb-cards,
+  .rt-text {
     box-sizing: border-box;
     padding: 0 40px;
   }
@@ -307,6 +308,9 @@ $cobalt: #2b2d42;
     }
   }
   .copy {
+    h2 {
+      display: none;
+    }
     p {
       text-align: center;
       @include montserrat($size: 10pt, $color: $grey);
@@ -314,6 +318,34 @@ $cobalt: #2b2d42;
       a {
         color: $grey;
       }
+    }
+  }
+}
+@media screen and (min-width: break("medium")) {
+  .primary-footer {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    .social-icon-con {
+      justify-content: flex-end;
+      margin: 15px 0;
+      width: auto;
+    }
+    .copy {
+      h2 {
+        @include montserrat($size: 12pt, $weight: bold);
+        text-transform: uppercase;
+        display: block;
+        padding: 0 8px;
+      }
+      p {
+        padding-top: 5px;
+      }
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction: column;
+      margin-left: 30px;
     }
   }
 }
