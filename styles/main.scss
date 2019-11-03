@@ -206,6 +206,13 @@ $cobalt: #2b2d42;
     top: -60px;
   }
 }
+@media screen and (min-width: break("xlarge")) {
+  .leaf-illus-con {
+    width: 20%;
+    top: -100px;
+    left: 30%;
+  }
+}
 .leaf-overflow-con {
   display: none;
 }
@@ -229,7 +236,6 @@ $cobalt: #2b2d42;
     }
   }
 }
-
 .wellness {
   box-sizing: border-box;
   margin-top: 30%;
@@ -243,6 +249,11 @@ $cobalt: #2b2d42;
   .well-body {
     @include montserrat($size: 12pt);
     line-height: 25px;
+  }
+}
+@media screen and (min-width: break("xlarge")) {
+  .wellness {
+    margin-top: 200px;
   }
 }
 .feature-cards {
