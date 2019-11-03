@@ -70,6 +70,11 @@ $cobalt: #2b2d42;
   width: 100%;
   text-align: center;
 }
+@media screen and (min-width: break("medium")) {
+  .logo-name {
+    @include montserrat($color: $white, $size: 40pt, $weight: lighter);
+  }
+}
 .call-to-action {
   margin-top: 15px;
   display: flex;
@@ -93,6 +98,15 @@ $cobalt: #2b2d42;
   .cta-button {
     @include button-normalize();
   }
+  @media screen and (min-width: break("medium")) {
+    .cta-main {
+      @include montserrat($color: $white, $size: 30pt, $weight: bold);
+      line-height: 50px;
+    }
+    .cta-sub {
+      @include montserrat($color: $white, $size: 20pt);
+    }
+  }
 }
 .mock-img {
   width: 100%;
@@ -105,6 +119,12 @@ $cobalt: #2b2d42;
     margin-bottom: -35%;
   }
 }
+@media screen and (min-width: break("medium")) {
+  .mock-img {
+    margin-left: 10%;
+    width: 80%;
+  }
+}
 .leaf-illus-con {
   width: 40%;
   position: relative;
@@ -114,6 +134,12 @@ $cobalt: #2b2d42;
   height: 0;
   .leaf-illus-1 {
     width: 100%;
+  }
+}
+@media screen and (min-width: break("small")) {
+  .leaf-illus-con {
+    width: 30%;
+    top: -60px;
   }
 }
 .wellness {
@@ -205,6 +231,24 @@ $cobalt: #2b2d42;
       width: 160px;
       height: 120px;
     }
+  }
+}
+@media screen and (min-width: break("medium")) {
+  .wellness,
+  .feature-cards,
+  .knowledge-base,
+  .kb-cards {
+    box-sizing: border-box;
+    padding: 0 40px;
+  }
+  .feature-cards .card {
+    width: 280px;
+  }
+  .kb-cards {
+    margin-top: 30px;
+  }
+  .kb-cards .card {
+    flex-basis: 20%;
   }
 }
 .real-time {
