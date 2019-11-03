@@ -158,3 +158,39 @@ body {
     }
   }
 }
+.knowledge-base {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 15px;
+  margin-top: 15px;
+  .kb-title {
+    @include montserrat($size: 20pt, $weight: bold);
+    line-height: 35px;
+    margin-bottom: 20px;
+  }
+  .kb-body {
+    @include montserrat($size: 12pt);
+    line-height: 25px;
+  }
+}
+.kb-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  .card {
+    @include light-shadow();
+    margin: 10px;
+    padding: 15px 10px 10px 10px;
+    width: 110px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    p {
+      @include montserrat($size: 10pt, $weight: bold);
+      text-align: center;
+    }
+  }
+}
