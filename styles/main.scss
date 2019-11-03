@@ -213,3 +213,25 @@ body {
     margin-left: -35%;
   }
 }
+.download {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px 0;
+  background-color: red;
+  h2 {
+    @include montserrat($size: 20pt, $weight: bold);
+    text-transform: uppercase;
+  }
+  p {
+    @include montserrat($size: 12pt);
+    margin-top: 15px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .store-icon {
+    width: 150px;
+    margin-top: 15px;
+  }
+}
