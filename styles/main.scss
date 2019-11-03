@@ -361,6 +361,14 @@ $cobalt: #2b2d42;
     justify-content: space-evenly;
     background-color: $grey-back;
   }
+  .kb-cards .card {
+    &:nth-child(3n-2) {
+      transform: translateY(30px);
+    }
+    &:nth-child(3n) {
+      transform: translateY(-30px);
+    }
+  }
 }
 @media screen and (min-width: break("medium")) {
   .wellness,
