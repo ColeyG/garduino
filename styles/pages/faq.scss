@@ -20,6 +20,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: row;
+  flex-wrap: wrap;
   .question-card {
     @include light-shadow();
     width: 40%;
@@ -27,10 +28,12 @@
     .question {
       @include montserrat($color: black, $size: 12pt, $weight: bold);
       padding: 10px;
+      line-height: 18px;
     }
     .answer {
       @include montserrat($color: black, $size: 12pt, $weight: lighter);
       padding: 10px;
+      line-height: 18px;
     }
     .user {
       @include montserrat($color: black, $size: 12pt, $weight: lighter);
