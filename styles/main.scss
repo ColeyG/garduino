@@ -187,7 +187,7 @@ $cobalt: #2b2d42;
   }
   .hero-space {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
   }
 }
 .leaf-illus-con {
@@ -310,6 +310,9 @@ $cobalt: #2b2d42;
   width: 100%;
   padding: 15px;
   margin-top: 15px;
+  .kb-text {
+    max-width: 100%;
+  }
   .kb-title {
     @include montserrat($size: 20pt, $weight: bold);
     line-height: 35px;
