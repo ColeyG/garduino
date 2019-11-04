@@ -5,11 +5,166 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Default</title>
+  <title>Florium</title>
+  <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville%7CMontserrat:300,400&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="compiled/bundle.css">
 </head>
 
 <body>
+  <div class="overlay" data-bind="toggleHambNav">
+    <ul>
+      <li><a href="">Home</a></li>
+      <li><a href="product-sync.html">Product Sync</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
+  <section class="home">
+    <h2 class="sr-only">Home</h2>
+    <nav class="primary-nav">
+      <h2 class="sr-only">Navigation</h2>
+      <div class="desktop-menu">
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="product-sync.html">Product Sync</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="hamb-con" data-bind="toggleHambNav">
+        <div class="hamb-sec"></div>
+        <div class="hamb-sec"></div>
+        <div class="hamb-sec"></div>
+      </div>
+    </nav>
+    <div class="logo-name">
+      Florium
+    </div>
+    <div class="hero-space">
+      <div class="call-to-action">
+        <p class="cta-main">Grow Your
+          <br>
+          Plant Portfolio</p>
+        <p class="cta-sub">Making your garden tech friendly</p>
+        <button class="cta-button">Get Started</button>
+      </div>
+      <div class="mock-img">
+        <img src="assets/mockups/iphone-mockup.png" alt>
+      </div>
+    </div>
+  </section>
+  <div class="leaf-illus-con">
+    <img class="leaf-illus-1" src="assets/illustrations/leaf1.png" alt>
+  </div>
+  <section class="wellness-and-cards">
+    <h2 class="sr-only">Wellness</h2>
+    <section class="wellness">
+      <div class="wellness-text">
+        <h2 class="well-title">Your guide to plant wellness</h2>
+        <p class="well-body">Get a helper to supervise the temperature, humidity, soil moisture, and light status of
+          your
+          plant. System will
+          automatically provide its necessary needs like light, water, and pure fresh air.</p>
+      </div>
+    </section>
+    <section class="feature-cards">
+      <div class="card">
+        <img class="feature-icon" src="assets/icons/water.svg" alt="Water">
+        <div class="feature-text">
+          <h2>Water</h2>
+          <p>Waters your plants when they're thirsty</p>
+        </div>
+      </div>
+      <div class="card">
+        <img class="feature-icon" src="assets/icons/light-hand.svg" alt="Light Bulb">
+        <div class="feature-text">
+          <h2>Light</h2>
+          <p>Turns on supplemental lights when the sun is not present or bright enough</p>
+        </div>
+      </div>
+      <div class="card">
+        <img class="feature-icon" src="assets/icons/plant.svg" alt="Plant in Soil">
+        <div class="feature-text">
+          <h2>Soil Moisture</h2>
+          <p>Alerts you when temperatures are botanically uncomfortable or chilly, and when the soil is dry</p>
+        </div>
+      </div>
+    </section>
+  </section>
+  <div class="leaf-overflow-con">
+    <div class="leaf-illus-con-2">
+      <img class="leaf-illus-2" src="assets/illustrations/leaf2.png" alt>
+    </div>
+  </div>
+  <section class="knowledge-base-and-kb-cards">
+    <h2 class="sr-only">Knowledge Base</h2>
+    <section class="knowledge-base">
+      <div class="kb-text">
+        <h2 class="kb-title">Access a growing library of materials</h2>
+        <p class="kb-body">
+          Get up-to-date tips and recommendations on how to take care of your favorite plants. Explore the variety of
+          plants that you can add to your collection.
+        </p>
+      </div>
+    </section>
+    <section class="kb-cards">
+      <h2 class="sr-only">Knowledge Base Cards</h2>
+      <div class="card">
+        <p>Tracking Tips</p>
+        <img src="assets/illustrations/check-marks.svg" alt>
+      </div>
+      <div class="card">
+        <p>Care Guides</p>
+        <img src="assets/illustrations/book-reading.svg" alt>
+      </div>
+      <div class="card">
+        <p>Analytics</p>
+        <img src="assets/illustrations/scale-up.svg" alt>
+      </div>
+      <div class="card">
+        <p>Shopping Tips</p>
+        <img src="assets/illustrations/plant.svg" alt>
+      </div>
+      <div class="card">
+        <p>Recovery</p>
+        <img class="recovery" src="assets/illustrations/outdoors.svg" alt>
+      </div>
+      <div class="card">
+        <p>Gallery</p>
+        <img src="assets/illustrations/photo-session.svg" alt>
+      </div>
+    </section>
+  </section>
+  <section class="real-time">
+    <div class="rt-text">
+      <h2 class="rt-title">See your garden growing in real time</h2>
+      <p class="rt-body">
+        With Florium, check your plants anytime and anywhere
+      </p>
+    </div>
+    <img src="assets/mockups/plant-mockup.png" alt="Plant on Phone Screen">
+  </section>
+  <section class="download">
+    <h2>Download</h2>
+    <p>It's FREE for use with all Florium Products</p>
+    <div class="store-icons">
+      <img class="store-icon" src="assets/icons/apple.svg" alt="Apple Store Available">
+      <img class="store-icon" src="assets/icons/google.svg" alt="Google Play Store Available">
+    </div>
+  </section>
+  <footer class="primary-footer">
+    <div class="social-icon-con">
+      <img src="assets/icons/instagram.svg" alt="Instagram">
+      <img src="assets/icons/twitter.svg" alt="Twitter">
+      <img src="assets/icons/facebook.svg" alt="Facebook">
+      <img src="assets/icons/gmail.svg" alt="Mail">
+    </div>
+    <div class="copy">
+      <h2>Florium</h2>
+      <p>Copyright <a href="#">Florium</a> 2019. All Rights Reserved.</p>
+    </div>
+  </footer>
   <script src="compiled/bundle.js"></script>
 </body>
 
