@@ -409,6 +409,25 @@ $cobalt: #2b2d42;
     width: 100%;
   }
 }
+@media screen and (min-width: break("large")) {
+  .real-time {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row-reverse;
+    .rt-title {
+      @include montserrat($size: 36pt, $weight: bold);
+      line-height: 45px;
+    }
+    .rt-body {
+      @include montserrat($size: 20pt);
+      line-height: 30px;
+    }
+    img {
+      width: 60%;
+    }
+  }
+}
 @media screen and (min-width: break("xlarge")) {
   .feature-cards {
     flex-direction: column;
