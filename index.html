@@ -12,6 +12,9 @@
 </head>
 
 <body>
+  <div class="overlay">
+    <a href="#" data-bind="toggleHambNav">Close</a>
+  </div>
   <section class="home">
     <h2 class="sr-only">Home</h2>
     <nav class="primary-nav">
@@ -24,7 +27,7 @@
           <li><a href="#">Contact</a></li>
         </ul>
       </div>
-      <div class="hamb-con">
+      <div class="hamb-con" data-bind="toggleHambNav">
         <div class="hamb-sec"></div>
         <div class="hamb-sec"></div>
         <div class="hamb-sec"></div>
