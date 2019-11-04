@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,8 +10,35 @@
     rel="stylesheet">
   <link rel="stylesheet" href="compiled/bundle.css">
 </head>
+
 <body>
-  
+  <div class="overlay" data-bind="toggleHambNav">
+    <ul>
+      <li><a href="">Home</a></li>
+      <li><a href="product-sync.html">Product Sync</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
+  <header class="primary-header">
+    <h2>
+      Florium - FAQ
+    </h2>
+    <div class="hamb-con" data-bind="toggleHambNav">
+      <div class="hamb-sec"></div>
+      <div class="hamb-sec"></div>
+      <div class="hamb-sec"></div>
+    </div>
+    <div class="desktop-menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="product-sync.html">Product Sync</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </header>
   <script src="compiled/bundle.js"></script>
 </body>
+
 </html>
