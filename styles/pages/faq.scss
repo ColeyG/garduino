@@ -14,3 +14,31 @@
     @include montserrat($color: $white, $size: 32pt, $weight: lighter);
   }
 }
+.faq-questions {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  .question-card {
+    @include light-shadow();
+    width: 40%;
+    margin: 20px 5%;
+    .question {
+      @include montserrat($color: black, $size: 12pt, $weight: bold);
+      padding: 10px;
+    }
+    .answer {
+      @include montserrat($color: black, $size: 12pt, $weight: lighter);
+      padding: 10px;
+    }
+    .user {
+      @include montserrat($color: black, $size: 12pt, $weight: lighter);
+      font-style: italic;
+      padding: 10px;
+      &:before {
+        content: "-";
+      }
+    }
+  }
+}
