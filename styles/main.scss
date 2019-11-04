@@ -47,10 +47,22 @@ $cobalt: #2b2d42;
   height: 100vh;
   overflow: hidden;
   margin-bottom: -100vh;
-  background-color: red;
+  background-color: rgba($green, 0.75);
   opacity: 0;
   pointer-events: none;
   transition: 0.2s;
+  backdrop-filter: blur(7px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  ul li {
+    text-align: center;
+    margin: 20px;
+    a {
+      text-decoration: none;
+      @include montserrat($color: $white, $size: 20pt);
+    }
+  }
 }
 .home {
   width: 100%;
@@ -77,6 +89,7 @@ $cobalt: #2b2d42;
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
+  cursor: pointer;
   .hamb-sec {
     width: 30px;
     height: 7px;
