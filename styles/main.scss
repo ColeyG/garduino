@@ -352,6 +352,9 @@ $cobalt: #2b2d42;
   }
 }
 @media screen and (min-width: break("xlarge")) {
+  .kb-cards {
+    width: 50%;
+  }
   .knowledge-base {
     width: 50%;
     display: flex;
